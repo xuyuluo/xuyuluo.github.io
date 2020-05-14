@@ -7,16 +7,23 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-<title>Tag: cuda - 一个在读PhD的记录</title>
+<title>什么是self attention? 什么是transformer? - 一个在读PhD的记录</title>
 
 
-    <meta property="og:type" content="website">
-<meta property="og:title" content="一个在读PhD的记录">
-<meta property="og:url" content="https://github.com/xuyuluo/tags/cuda/index.html">
+    <meta name="description" content="注意力(attention)即能够集中精力">
+<meta property="og:type" content="article">
+<meta property="og:title" content="什么是self attention? 什么是transformer?">
+<meta property="og:url" content="https://github.com/xuyuluo/2020/05/14/self-att/index.html">
 <meta property="og:site_name" content="一个在读PhD的记录">
+<meta property="og:description" content="注意力(attention)即能够集中精力">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://github.com/images/og_image.png">
+<meta property="article:published_time" content="2020-05-14T17:55:38.000Z">
+<meta property="article:modified_time" content="2020-05-14T17:59:40.208Z">
 <meta property="article:author" content="Xuyu">
+<meta property="article:tag" content="deep learning">
+<meta property="article:tag" content="nlp">
+<meta property="article:tag" content="generation">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://github.com/images/og_image.png">
 
@@ -76,7 +83,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="/images/logo.svg" alt="一个在读PhD的记录" height="28">
+                <img src="/images/logo.svg" alt="什么是self attention? 什么是transformer?" height="28">
             
             </a>
         </div>
@@ -125,41 +132,20 @@
     <section class="section">
         <div class="container">
             <div class="columns">
-                <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main"><div class="card">
-    <div class="card-content">
-        <nav class="breadcrumb" aria-label="breadcrumbs">
-        <ul>
-            <li><a href="/tags">Tags</a></li>
-            <li class="is-active"><a href="#" aria-current="page">cuda</a></li>
-        </ul>
-        </nav>
-    </div>
-</div>
-
-    
+                <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main">
 <div class="card">
-    
-    <div class="card-image">
-        <a href="/2020/01/14/read-caffe2/" class="image is-7by1">
-            <img class="thumbnail" src="http://caffe2.ai/static/og_image_caffe2.png" alt="Caffe源码阅读（二）">
-        </a>
-    </div>
     
     <div class="card-content article ">
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2020-01-14T22:48:48.000Z">2020-01-14</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/Study/">Study</a>
-                </div>
+                <time class="level-item has-text-grey" datetime="2020-05-14T17:55:38.000Z">2020-05-14</time>
                 
                 
                 <span class="level-item has-text-grey">
                     
                     
-                    a few seconds read (About 0 words)
+                    a few seconds read (About 11 words)
                 </span>
                 
                 
@@ -168,72 +154,23 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                <a class="has-link-black-ter" href="/2020/01/14/read-caffe2/">Caffe源码阅读（二）</a>
+                什么是self attention? 什么是transformer?
             
         </h1>
         <div class="content">
-            
+            <p><strong>注意力</strong>(attention)即能够集中精力</p>
+
         </div>
         
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    
-<div class="card">
-    
-    <div class="card-image">
-        <a href="/2020/01/14/read-caffe/" class="image is-7by1">
-            <img class="thumbnail" src="http://caffe2.ai/static/og_image_caffe2.png" alt="Caffe源码阅读（一）">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2020-01-14T19:26:28.000Z">2020-01-14</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/Study/">Study</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    a few seconds read (About 63 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/2020/01/14/read-caffe/">Caffe源码阅读（一）</a>
-            
-        </h1>
-        <div class="content">
-            <p>作为自己博士工作的一部分，要给Martin的<a href="https://mrirecon.github.io/bart/">bart toolboox</a>添砖加瓦，负责深度学习重建部分的工作。先学习下caffe，并作记录</p>
-        </div>
-        
-        
-        <div class="level is-mobile">
+        <div class="level is-size-7 is-uppercase">
             <div class="level-start">
                 <div class="level-item">
-                <a class="button is-size-7 is-light" href="/2020/01/14/read-caffe/#more">Read More</a>
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/tags/deep-learning/" rel="tag">deep learning</a>, <a class="has-link-grey -link" href="/tags/generation/" rel="tag">generation</a>, <a class="has-link-grey -link" href="/tags/nlp/" rel="tag">nlp</a>
                 </div>
             </div>
         </div>
+        
         
         
     </div>
@@ -241,9 +178,40 @@
 
 
 
+<div class="card">
+    <div class="card-content">
+        <h3 class="menu-label has-text-centered">Like this article? Support the author with</h3>
+        <div class="buttons is-centered">
+            
+                
+<a class="button is-info donate">
+    <span class="icon is-small">
+        <i class="fab fa-alipay"></i>
+    </span>
+    <span>Alipay</span>
+    <div class="qrcode"><img src="/./images/qrcode.png" alt="Alipay"></div>
+</a>
+
+                
+        </div>
+    </div>
+</div>
 
 
 
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/2020/05/14/py-c-etxtension/">
+                <span class="level-item">Python的C/C++ extension</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
 
 
 </div>
@@ -1004,7 +972,7 @@
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/">
                 
-                    <img src="/images/logo.svg" alt="一个在读PhD的记录" height="28">
+                    <img src="/images/logo.svg" alt="什么是self attention? 什么是transformer?" height="28">
                 
                 </a>
                 <p class="is-size-7">
