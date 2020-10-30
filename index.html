@@ -133,6 +133,116 @@
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2020-10-30T13:18:26.000Z">2020-10-30</time>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    a minute read (About 130 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2020/10/30/handle-strings/">handle tough strings with seq or awk</a>
+            
+        </h1>
+        <div class="content">
+            <h2 id="Handle-string-stream"><a href="#Handle-string-stream" class="headerlink" title="Handle string stream"></a>Handle string stream</h2><p>Extract string from squared brackets</p>
+<p>Using awk</p>
+<blockquote>
+<p>echo “string1 [string2] string3 string4” | awk -F’[][]’ ‘{print $2}’</p>
+</blockquote>
+<p>Using sed</p>
+<blockquote>
+<p>echo “string1 [string2] string3 string4” | sed ‘s/.<em>[([^]]*)].</em>/\1/g’</p>
+</blockquote>
+<ol>
+<li>s/          &lt;– this means it should perform a substitution</li>
+<li>.*          &lt;– this means to match zero or more characters</li>
+<li>[          &lt;– this means match a literal [ character</li>
+<li>(          &lt;– this starts saving the pattern for later use</li>
+<li>[^]]*       &lt;– this means match any character that is not a [ character the outer [ and ] signify that this is a 1. character class having the ^ character as the first character in the class means “not”</li>
+<li>)          &lt;– this closes the saving of the pattern match for later use</li>
+<li>]          &lt;– this means match a literal ] character</li>
+<li>.*          &lt;– this means to match zero or more characters</li>
+<li>/\1         &lt;– this means to replace everything matched with the first saved pattern (the match between “(“ and “)1. “ )</li>
+</ol>
+
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    
+<div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2020-10-30T13:11:52.000Z">2020-10-30</time>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    a minute read (About 188 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2020/10/30/git-usage/">Git command</a>
+            
+        </h1>
+        <div class="content">
+            <h2 id="How-to-initialize-a-repository"><a href="#How-to-initialize-a-repository" class="headerlink" title="How to initialize a repository"></a>How to initialize a repository</h2><p>Let’s say you have an existing project that you want to start tracking with git.<br>Step 7 and 8 coulde be skipped, if you already add the public key.</p>
+        </div>
+        
+        
+        <div class="level is-mobile">
+            <div class="level-start">
+                <div class="level-item">
+                <a class="button is-size-7 is-light" href="/2020/10/30/git-usage/#more">Read More</a>
+                </div>
+            </div>
+        </div>
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    
+<div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
                 <time class="level-item has-text-grey" datetime="2020-09-07T07:37:21.000Z">2020-09-07</time>
                 
                 
@@ -219,51 +329,6 @@
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2020-05-14T18:58:47.000Z">2020-05-14</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/Reading-and-writing/">Reading and writing</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    a few seconds read (About 0 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/2020/05/14/harder-to-make-a-living/">工作越来越少了，钱越来越难挣了</a>
-            
-        </h1>
-        <div class="content">
-            
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    
-<div class="card">
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
                 <time class="level-item has-text-grey" datetime="2020-05-14T17:55:38.000Z">2020-05-14</time>
                 
                 <div class="level-item">
@@ -295,59 +360,6 @@
             <div class="level-start">
                 <div class="level-item">
                 <a class="button is-size-7 is-light" href="/2020/05/14/self-att/#more">Read More</a>
-                </div>
-            </div>
-        </div>
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    
-<div class="card">
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2020-05-14T17:20:40.000Z">2020-05-14</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/Study/">Study</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    a few seconds read (About 59 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/2020/05/14/py-c-etxtension/">Python的C/C++ extension</a>
-            
-        </h1>
-        <div class="content">
-            <p>虽然用Python来验证一些计算问题是非常方便的，但有时候不可避免的需要用到一些C/C++库，此时通过extension来调用他们是一个不错的选择。</p>
-        </div>
-        
-        
-        <div class="level is-mobile">
-            <div class="level-start">
-                <div class="level-item">
-                <a class="button is-size-7 is-light" href="/2020/05/14/py-c-etxtension/#more">Read More</a>
                 </div>
             </div>
         </div>
@@ -455,7 +467,7 @@
                     </p>
                     <a href="/tags">
                         <p class="title has-text-weight-normal">
-                            15
+                            16
                         </p>
                     </a>
                 </div>
@@ -571,7 +583,7 @@
                 <span class="level-item">Reading and writing</span>
             </span>
             <span class="level-end">
-                <span class="level-item tag">2</span>
+                <span class="level-item tag">1</span>
             </span>
         </a></li><li>
         <a class="level is-marginless" href="/categories/Study/">
@@ -579,7 +591,7 @@
                 <span class="level-item">Study</span>
             </span>
             <span class="level-end">
-                <span class="level-item tag">9</span>
+                <span class="level-item tag">8</span>
             </span>
         </a></li><li>
         <a class="level is-marginless" href="/categories/Work/">
@@ -600,7 +612,7 @@
         <h3 class="menu-label">
             Tag Cloud
         </h3>
-        <a href="/tags/MRI/" style="font-size: 10px;">MRI</a> <a href="/tags/c/" style="font-size: 10px;">c</a> <a href="/tags/c/" style="font-size: 16.67px;">c++</a> <a href="/tags/caffe/" style="font-size: 13.33px;">caffe</a> <a href="/tags/cook/" style="font-size: 10px;">cook</a> <a href="/tags/cuda/" style="font-size: 13.33px;">cuda</a> <a href="/tags/deep-learning/" style="font-size: 20px;">deep learning</a> <a href="/tags/image-generation/" style="font-size: 10px;">image generation</a> <a href="/tags/image-reconstruction/" style="font-size: 10px;">image reconstruction</a> <a href="/tags/language-learning/" style="font-size: 16.67px;">language learning</a> <a href="/tags/nlp/" style="font-size: 10px;">nlp</a> <a href="/tags/opinions/" style="font-size: 16.67px;">opinions</a> <a href="/tags/python/" style="font-size: 13.33px;">python</a> <a href="/tags/ubuntu/" style="font-size: 10px;">ubuntu</a> <a href="/tags/useful-commands/" style="font-size: 10px;">useful commands</a>
+        <a href="/tags/MRI/" style="font-size: 10px;">MRI</a> <a href="/tags/c/" style="font-size: 10px;">c</a> <a href="/tags/c/" style="font-size: 15px;">c++</a> <a href="/tags/caffe/" style="font-size: 10px;">caffe</a> <a href="/tags/cook/" style="font-size: 10px;">cook</a> <a href="/tags/cuda/" style="font-size: 10px;">cuda</a> <a href="/tags/deep-learning/" style="font-size: 20px;">deep learning</a> <a href="/tags/image-generation/" style="font-size: 10px;">image generation</a> <a href="/tags/image-reconstruction/" style="font-size: 10px;">image reconstruction</a> <a href="/tags/language-learning/" style="font-size: 15px;">language learning</a> <a href="/tags/language-learning-vocabulary/" style="font-size: 10px;">language learning, vocabulary</a> <a href="/tags/nlp/" style="font-size: 10px;">nlp</a> <a href="/tags/opinions/" style="font-size: 15px;">opinions</a> <a href="/tags/python/" style="font-size: 15px;">python</a> <a href="/tags/ubuntu/" style="font-size: 10px;">ubuntu</a> <a href="/tags/useful-commands/" style="font-size: 10px;">useful commands</a>
     </div>
 </div>
     
@@ -612,6 +624,44 @@
         <h3 class="menu-label">
             Recent
         </h3>
+        
+        <article class="media">
+            
+            <a href="/2020/10/30/handle-strings/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="handle tough strings with seq or awk">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-10-30T13:18:26.000Z">2020-10-30</time></div>
+                    <a href="/2020/10/30/handle-strings/" class="title has-link-black-ter is-size-6 has-text-weight-normal">handle tough strings with seq or awk</a>
+                    <p class="is-size-7 is-uppercase">
+                        
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2020/10/30/git-usage/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Git command">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-10-30T13:11:52.000Z">2020-10-30</time></div>
+                    <a href="/2020/10/30/git-usage/" class="title has-link-black-ter is-size-6 has-text-weight-normal">Git command</a>
+                    <p class="is-size-7 is-uppercase">
+                        
+                    </p>
+                </div>
+            </div>
+        </article>
         
         <article class="media">
             
@@ -653,25 +703,6 @@
         
         <article class="media">
             
-            <a href="/2020/05/14/harder-to-make-a-living/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="工作越来越少了，钱越来越难挣了">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-05-14T18:58:47.000Z">2020-05-14</time></div>
-                    <a href="/2020/05/14/harder-to-make-a-living/" class="title has-link-black-ter is-size-6 has-text-weight-normal">工作越来越少了，钱越来越难挣了</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/Reading-and-writing/">Reading and writing</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
             <a href="/2020/05/14/self-att/" class="media-left">
                 <p class="image is-64x64">
                     <img class="thumbnail" src="/images/thumbnail.svg" alt="什么是self attention? 什么是transformer?">
@@ -682,25 +713,6 @@
                 <div class="content">
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-05-14T17:55:38.000Z">2020-05-14</time></div>
                     <a href="/2020/05/14/self-att/" class="title has-link-black-ter is-size-6 has-text-weight-normal">什么是self attention? 什么是transformer?</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/Study/">Study</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <a href="/2020/05/14/py-c-etxtension/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Python的C/C++ extension">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-05-14T17:20:40.000Z">2020-05-14</time></div>
-                    <a href="/2020/05/14/py-c-etxtension/" class="title has-link-black-ter is-size-6 has-text-weight-normal">Python的C/C++ extension</a>
                     <p class="is-size-7 is-uppercase">
                         <a class="has-link-grey -link" href="/categories/Study/">Study</a>
                     </p>
@@ -720,6 +732,17 @@
         <ul class="menu-list">
         
         <li>
+            <a class="level is-marginless" href="/archives/2020/10/">
+                <span class="level-start">
+                    <span class="level-item">October 2020</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">2</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
             <a class="level is-marginless" href="/archives/2020/09/">
                 <span class="level-start">
                     <span class="level-item">September 2020</span>
@@ -736,7 +759,7 @@
                     <span class="level-item">May 2020</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">5</span>
+                    <span class="level-item tag">4</span>
                 </span>
             </a>
         </li>
@@ -747,7 +770,7 @@
                     <span class="level-item">January 2020</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">10</span>
+                    <span class="level-item tag">9</span>
                 </span>
             </a>
         </li>
@@ -782,14 +805,14 @@
                 <div class="control">
                     <a class="tags has-addons" href="/tags/c/">
                         <span class="tag">c++</span>
-                        <span class="tag is-grey">3</span>
+                        <span class="tag is-grey">2</span>
                     </a>
                 </div>
                 
                 <div class="control">
                     <a class="tags has-addons" href="/tags/caffe/">
                         <span class="tag">caffe</span>
-                        <span class="tag is-grey">2</span>
+                        <span class="tag is-grey">1</span>
                     </a>
                 </div>
                 
@@ -803,14 +826,14 @@
                 <div class="control">
                     <a class="tags has-addons" href="/tags/cuda/">
                         <span class="tag">cuda</span>
-                        <span class="tag is-grey">2</span>
+                        <span class="tag is-grey">1</span>
                     </a>
                 </div>
                 
                 <div class="control">
                     <a class="tags has-addons" href="/tags/deep-learning/">
                         <span class="tag">deep learning</span>
-                        <span class="tag is-grey">4</span>
+                        <span class="tag is-grey">3</span>
                     </a>
                 </div>
                 
@@ -831,7 +854,14 @@
                 <div class="control">
                     <a class="tags has-addons" href="/tags/language-learning/">
                         <span class="tag">language learning</span>
-                        <span class="tag is-grey">3</span>
+                        <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/language-learning-vocabulary/">
+                        <span class="tag">language learning, vocabulary</span>
+                        <span class="tag is-grey">1</span>
                     </a>
                 </div>
                 
@@ -845,7 +875,7 @@
                 <div class="control">
                     <a class="tags has-addons" href="/tags/opinions/">
                         <span class="tag">opinions</span>
-                        <span class="tag is-grey">3</span>
+                        <span class="tag is-grey">2</span>
                     </a>
                 </div>
                 
@@ -894,6 +924,44 @@
         
         <article class="media">
             
+            <a href="/2020/10/30/handle-strings/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="handle tough strings with seq or awk">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-10-30T13:18:26.000Z">2020-10-30</time></div>
+                    <a href="/2020/10/30/handle-strings/" class="title has-link-black-ter is-size-6 has-text-weight-normal">handle tough strings with seq or awk</a>
+                    <p class="is-size-7 is-uppercase">
+                        
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2020/10/30/git-usage/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Git command">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-10-30T13:11:52.000Z">2020-10-30</time></div>
+                    <a href="/2020/10/30/git-usage/" class="title has-link-black-ter is-size-6 has-text-weight-normal">Git command</a>
+                    <p class="is-size-7 is-uppercase">
+                        
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
             <a href="/2020/09/07/pythonic-codes/" class="media-left">
                 <p class="image is-64x64">
                     <img class="thumbnail" src="/images/thumbnail.svg" alt="pythonic_codes">
@@ -932,25 +1000,6 @@
         
         <article class="media">
             
-            <a href="/2020/05/14/harder-to-make-a-living/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="工作越来越少了，钱越来越难挣了">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-05-14T18:58:47.000Z">2020-05-14</time></div>
-                    <a href="/2020/05/14/harder-to-make-a-living/" class="title has-link-black-ter is-size-6 has-text-weight-normal">工作越来越少了，钱越来越难挣了</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/Reading-and-writing/">Reading and writing</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
             <a href="/2020/05/14/self-att/" class="media-left">
                 <p class="image is-64x64">
                     <img class="thumbnail" src="/images/thumbnail.svg" alt="什么是self attention? 什么是transformer?">
@@ -961,25 +1010,6 @@
                 <div class="content">
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-05-14T17:55:38.000Z">2020-05-14</time></div>
                     <a href="/2020/05/14/self-att/" class="title has-link-black-ter is-size-6 has-text-weight-normal">什么是self attention? 什么是transformer?</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/Study/">Study</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <a href="/2020/05/14/py-c-etxtension/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Python的C/C++ extension">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-05-14T17:20:40.000Z">2020-05-14</time></div>
-                    <a href="/2020/05/14/py-c-etxtension/" class="title has-link-black-ter is-size-6 has-text-weight-normal">Python的C/C++ extension</a>
                     <p class="is-size-7 is-uppercase">
                         <a class="has-link-grey -link" href="/categories/Study/">Study</a>
                     </p>
@@ -999,6 +1029,17 @@
         <ul class="menu-list">
         
         <li>
+            <a class="level is-marginless" href="/archives/2020/10/">
+                <span class="level-start">
+                    <span class="level-item">October 2020</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">2</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
             <a class="level is-marginless" href="/archives/2020/09/">
                 <span class="level-start">
                     <span class="level-item">September 2020</span>
@@ -1015,7 +1056,7 @@
                     <span class="level-item">May 2020</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">5</span>
+                    <span class="level-item tag">4</span>
                 </span>
             </a>
         </li>
@@ -1026,7 +1067,7 @@
                     <span class="level-item">January 2020</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">10</span>
+                    <span class="level-item tag">9</span>
                 </span>
             </a>
         </li>
@@ -1061,14 +1102,14 @@
                 <div class="control">
                     <a class="tags has-addons" href="/tags/c/">
                         <span class="tag">c++</span>
-                        <span class="tag is-grey">3</span>
+                        <span class="tag is-grey">2</span>
                     </a>
                 </div>
                 
                 <div class="control">
                     <a class="tags has-addons" href="/tags/caffe/">
                         <span class="tag">caffe</span>
-                        <span class="tag is-grey">2</span>
+                        <span class="tag is-grey">1</span>
                     </a>
                 </div>
                 
@@ -1082,14 +1123,14 @@
                 <div class="control">
                     <a class="tags has-addons" href="/tags/cuda/">
                         <span class="tag">cuda</span>
-                        <span class="tag is-grey">2</span>
+                        <span class="tag is-grey">1</span>
                     </a>
                 </div>
                 
                 <div class="control">
                     <a class="tags has-addons" href="/tags/deep-learning/">
                         <span class="tag">deep learning</span>
-                        <span class="tag is-grey">4</span>
+                        <span class="tag is-grey">3</span>
                     </a>
                 </div>
                 
@@ -1110,7 +1151,14 @@
                 <div class="control">
                     <a class="tags has-addons" href="/tags/language-learning/">
                         <span class="tag">language learning</span>
-                        <span class="tag is-grey">3</span>
+                        <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/language-learning-vocabulary/">
+                        <span class="tag">language learning, vocabulary</span>
+                        <span class="tag is-grey">1</span>
                     </a>
                 </div>
                 
@@ -1124,7 +1172,7 @@
                 <div class="control">
                     <a class="tags has-addons" href="/tags/opinions/">
                         <span class="tag">opinions</span>
-                        <span class="tag is-grey">3</span>
+                        <span class="tag is-grey">2</span>
                     </a>
                 </div>
                 
