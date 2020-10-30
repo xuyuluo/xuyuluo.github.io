@@ -10,16 +10,16 @@
 <title>handle tough strings with seq or awk - 随手记，拒绝遗忘</title>
 
 
-    <meta name="description" content="Handle string streamExtract string from squared brackets Using awk  echo “string1 [string2] string3 string4” | awk -F’[][]’ ‘{print $2}’  Using sed  echo “string1 [string2] string3 string4” | sed ‘s&#x2F;.">
+    <meta name="description" content="Handle string streamExtract string from squared brackets Using awk">
 <meta property="og:type" content="article">
 <meta property="og:title" content="handle tough strings with seq or awk">
 <meta property="og:url" content="https://github.com/xuyuluo/2020/10/30/handle-strings/index.html">
 <meta property="og:site_name" content="随手记，拒绝遗忘">
-<meta property="og:description" content="Handle string streamExtract string from squared brackets Using awk  echo “string1 [string2] string3 string4” | awk -F’[][]’ ‘{print $2}’  Using sed  echo “string1 [string2] string3 string4” | sed ‘s&#x2F;.">
+<meta property="og:description" content="Handle string streamExtract string from squared brackets Using awk">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://github.com/images/og_image.png">
 <meta property="article:published_time" content="2020-10-30T13:18:26.000Z">
-<meta property="article:modified_time" content="2020-10-30T13:20:11.824Z">
+<meta property="article:modified_time" content="2020-10-30T13:27:22.158Z">
 <meta property="article:author" content="Xuyu">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://github.com/images/og_image.png">
@@ -142,7 +142,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    a minute read (About 130 words)
+                    a minute read (About 134 words)
                 </span>
                 
                 
@@ -157,6 +157,7 @@
         <div class="content">
             <h2 id="Handle-string-stream"><a href="#Handle-string-stream" class="headerlink" title="Handle string stream"></a>Handle string stream</h2><p>Extract string from squared brackets</p>
 <p>Using awk</p>
+<a id="more"></a>
 <blockquote>
 <p>echo “string1 [string2] string3 string4” | awk -F’[][]’ ‘{print $2}’</p>
 </blockquote>
@@ -164,6 +165,7 @@
 <blockquote>
 <p>echo “string1 [string2] string3 string4” | sed ‘s/.<em>[([^]]*)].</em>/\1/g’</p>
 </blockquote>
+<!-- tab [lang] -->
 <ol>
 <li>s/          &lt;– this means it should perform a substitution</li>
 <li>.*          &lt;– this means to match zero or more characters</li>
@@ -173,7 +175,8 @@
 <li>)          &lt;– this closes the saving of the pattern match for later use</li>
 <li>]          &lt;– this means match a literal ] character</li>
 <li>.*          &lt;– this means to match zero or more characters</li>
-<li>/\1         &lt;– this means to replace everything matched with the first saved pattern (the match between “(“ and “)1. “ )</li>
+<li>/\1         &lt;– this means to replace everything matched with the first saved pattern (the match between “(“ and “)1. “ )<!-- endtab -->
+</li>
 </ol>
 
         </div>

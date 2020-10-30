@@ -139,7 +139,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    a minute read (About 130 words)
+                    a minute read (About 134 words)
                 </span>
                 
                 
@@ -154,27 +154,16 @@
         <div class="content">
             <h2 id="Handle-string-stream"><a href="#Handle-string-stream" class="headerlink" title="Handle string stream"></a>Handle string stream</h2><p>Extract string from squared brackets</p>
 <p>Using awk</p>
-<blockquote>
-<p>echo “string1 [string2] string3 string4” | awk -F’[][]’ ‘{print $2}’</p>
-</blockquote>
-<p>Using sed</p>
-<blockquote>
-<p>echo “string1 [string2] string3 string4” | sed ‘s/.<em>[([^]]*)].</em>/\1/g’</p>
-</blockquote>
-<ol>
-<li>s/          &lt;– this means it should perform a substitution</li>
-<li>.*          &lt;– this means to match zero or more characters</li>
-<li>[          &lt;– this means match a literal [ character</li>
-<li>(          &lt;– this starts saving the pattern for later use</li>
-<li>[^]]*       &lt;– this means match any character that is not a [ character the outer [ and ] signify that this is a 1. character class having the ^ character as the first character in the class means “not”</li>
-<li>)          &lt;– this closes the saving of the pattern match for later use</li>
-<li>]          &lt;– this means match a literal ] character</li>
-<li>.*          &lt;– this means to match zero or more characters</li>
-<li>/\1         &lt;– this means to replace everything matched with the first saved pattern (the match between “(“ and “)1. “ )</li>
-</ol>
-
         </div>
         
+        
+        <div class="level is-mobile">
+            <div class="level-start">
+                <div class="level-item">
+                <a class="button is-size-7 is-light" href="/2020/10/30/handle-strings/#more">Read More</a>
+                </div>
+            </div>
+        </div>
         
         
     </div>
