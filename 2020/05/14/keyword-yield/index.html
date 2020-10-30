@@ -19,7 +19,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://github.com/images/og_image.png">
 <meta property="article:published_time" content="2020-05-14T16:19:25.000Z">
-<meta property="article:modified_time" content="2020-05-14T18:52:06.626Z">
+<meta property="article:modified_time" content="2020-05-15T08:33:03.023Z">
 <meta property="article:author" content="Xuyu">
 <meta property="article:tag" content="python">
 <meta name="twitter:card" content="summary">
@@ -167,7 +167,7 @@
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> ... <span class="keyword">in</span> ...</span><br></pre></td></tr></table></figure>
 <p>操作的还有strings, files等可迭代量。这些可迭代量非常便于读取，但是所有的值都存储在其中，有些时候这并不是我们想要的。<br>生成器（generators）是一种仅可以被迭代一次但是不需要存储在内存中的可迭代量。</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">mygenerator = (x*x <span class="keyword">for</span> x <span class="keyword">in</span> range(<span class="number">3</span>))</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> mygenerator:</span><br><span class="line">    print(i)</span><br></pre></td></tr></table></figure>
-<p>仅需要用<span style="background-color:#D3D3D3">()</span>代替<span style="background-color:#D3D3D3">[]</span>，但是你没办法再次运行</p>
+<p>仅需要用<span style="background-color:#D3D3D3">()</span>代替<span style="background-color:#D3D3D3">[]</span>，但是你没办法再次遍历</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> mygenerator:</span><br><span class="line">    ....</span><br></pre></td></tr></table></figure>
 <p>生成器只生成不储存。<span style="background-color:#D3D3D3"><strong>yield</strong></span>关键字很多地方跟<span style="background-color:#D3D3D3"><strong>return</strong></span>一样除了在返回生成器的函数中。</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">create_generator</span><span class="params">()</span>:</span></span><br><span class="line">    mylist = range(<span class="number">3</span>)</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> mylist:</span><br><span class="line">        <span class="keyword">yield</span> i*i</span><br><span class="line">mygenerator = createGenerator()</span><br><span class="line">print(mygenerator) <span class="comment"># my generator is an object</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> mygenerator:</span><br><span class="line">    print(i)</span><br></pre></td></tr></table></figure>
@@ -279,7 +279,7 @@
                     </p>
                     <a href="/archives">
                         <p class="title has-text-weight-normal">
-                            14
+                            16
                         </p>
                     </a>
                 </div>
@@ -427,7 +427,7 @@
                 <span class="level-item">Study</span>
             </span>
             <span class="level-end">
-                <span class="level-item tag">8</span>
+                <span class="level-item tag">9</span>
             </span>
         </a></li><li>
         <a class="level is-marginless" href="/categories/Work/">
@@ -448,7 +448,7 @@
         <h3 class="menu-label">
             Tag Cloud
         </h3>
-        <a href="/tags/MRI/" style="font-size: 10px;">MRI</a> <a href="/tags/c/" style="font-size: 10px;">c</a> <a href="/tags/c/" style="font-size: 20px;">c++</a> <a href="/tags/caffe/" style="font-size: 15px;">caffe</a> <a href="/tags/cook/" style="font-size: 10px;">cook</a> <a href="/tags/cuda/" style="font-size: 15px;">cuda</a> <a href="/tags/deep-learning/" style="font-size: 20px;">deep learning</a> <a href="/tags/image-generation/" style="font-size: 10px;">image generation</a> <a href="/tags/image-reconstruction/" style="font-size: 10px;">image reconstruction</a> <a href="/tags/language-learning/" style="font-size: 20px;">language learning</a> <a href="/tags/nlp/" style="font-size: 10px;">nlp</a> <a href="/tags/opinions/" style="font-size: 20px;">opinions</a> <a href="/tags/python/" style="font-size: 15px;">python</a> <a href="/tags/ubuntu/" style="font-size: 10px;">ubuntu</a> <a href="/tags/useful-commands/" style="font-size: 10px;">useful commands</a>
+        <a href="/tags/MRI/" style="font-size: 10px;">MRI</a> <a href="/tags/c/" style="font-size: 10px;">c</a> <a href="/tags/c/" style="font-size: 16.67px;">c++</a> <a href="/tags/caffe/" style="font-size: 13.33px;">caffe</a> <a href="/tags/cook/" style="font-size: 10px;">cook</a> <a href="/tags/cuda/" style="font-size: 13.33px;">cuda</a> <a href="/tags/deep-learning/" style="font-size: 20px;">deep learning</a> <a href="/tags/image-generation/" style="font-size: 10px;">image generation</a> <a href="/tags/image-reconstruction/" style="font-size: 10px;">image reconstruction</a> <a href="/tags/language-learning/" style="font-size: 16.67px;">language learning</a> <a href="/tags/nlp/" style="font-size: 10px;">nlp</a> <a href="/tags/opinions/" style="font-size: 16.67px;">opinions</a> <a href="/tags/python/" style="font-size: 13.33px;">python</a> <a href="/tags/ubuntu/" style="font-size: 10px;">ubuntu</a> <a href="/tags/useful-commands/" style="font-size: 10px;">useful commands</a>
     </div>
 </div>
     
@@ -460,6 +460,44 @@
         <h3 class="menu-label">
             Recent
         </h3>
+        
+        <article class="media">
+            
+            <a href="/2020/09/07/pythonic-codes/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="pythonic_codes">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-09-07T07:37:21.000Z">2020-09-07</time></div>
+                    <a href="/2020/09/07/pythonic-codes/" class="title has-link-black-ter is-size-6 has-text-weight-normal">pythonic_codes</a>
+                    <p class="is-size-7 is-uppercase">
+                        
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2020/05/17/tf-add-arg-scope/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="add_arg_scope()该怎么用">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-05-17T09:44:41.000Z">2020-05-17</time></div>
+                    <a href="/2020/05/17/tf-add-arg-scope/" class="title has-link-black-ter is-size-6 has-text-weight-normal">add_arg_scope()该怎么用</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/Study/">Study</a>
+                    </p>
+                </div>
+            </div>
+        </article>
         
         <article class="media">
             
@@ -518,44 +556,6 @@
             </div>
         </article>
         
-        <article class="media">
-            
-            <a href="/2020/05/14/keyword-yield/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Python关键字yield">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-05-14T16:19:25.000Z">2020-05-14</time></div>
-                    <a href="/2020/05/14/keyword-yield/" class="title has-link-black-ter is-size-6 has-text-weight-normal">Python关键字yield</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/Study/">Study</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <a href="/2020/01/17/word-to-replace-do/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Words to replace &#34;do&#34;">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-01-17T12:51:50.000Z">2020-01-17</time></div>
-                    <a href="/2020/01/17/word-to-replace-do/" class="title has-link-black-ter is-size-6 has-text-weight-normal">Words to replace &#34;do&#34;</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/Study/">Study</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
     </div>
 </div>
         
@@ -568,12 +568,23 @@
         <ul class="menu-list">
         
         <li>
+            <a class="level is-marginless" href="/archives/2020/09/">
+                <span class="level-start">
+                    <span class="level-item">September 2020</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
             <a class="level is-marginless" href="/archives/2020/05/">
                 <span class="level-start">
                     <span class="level-item">May 2020</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">4</span>
+                    <span class="level-item tag">5</span>
                 </span>
             </a>
         </li>
@@ -647,7 +658,7 @@
                 <div class="control">
                     <a class="tags has-addons" href="/tags/deep-learning/">
                         <span class="tag">deep learning</span>
-                        <span class="tag is-grey">3</span>
+                        <span class="tag is-grey">4</span>
                     </a>
                 </div>
                 
@@ -731,6 +742,44 @@
         
         <article class="media">
             
+            <a href="/2020/09/07/pythonic-codes/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="pythonic_codes">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-09-07T07:37:21.000Z">2020-09-07</time></div>
+                    <a href="/2020/09/07/pythonic-codes/" class="title has-link-black-ter is-size-6 has-text-weight-normal">pythonic_codes</a>
+                    <p class="is-size-7 is-uppercase">
+                        
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2020/05/17/tf-add-arg-scope/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="add_arg_scope()该怎么用">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-05-17T09:44:41.000Z">2020-05-17</time></div>
+                    <a href="/2020/05/17/tf-add-arg-scope/" class="title has-link-black-ter is-size-6 has-text-weight-normal">add_arg_scope()该怎么用</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/Study/">Study</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
             <a href="/2020/05/14/harder-to-make-a-living/" class="media-left">
                 <p class="image is-64x64">
                     <img class="thumbnail" src="/images/thumbnail.svg" alt="工作越来越少了，钱越来越难挣了">
@@ -786,44 +835,6 @@
             </div>
         </article>
         
-        <article class="media">
-            
-            <a href="/2020/05/14/keyword-yield/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Python关键字yield">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-05-14T16:19:25.000Z">2020-05-14</time></div>
-                    <a href="/2020/05/14/keyword-yield/" class="title has-link-black-ter is-size-6 has-text-weight-normal">Python关键字yield</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/Study/">Study</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <a href="/2020/01/17/word-to-replace-do/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Words to replace &#34;do&#34;">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-01-17T12:51:50.000Z">2020-01-17</time></div>
-                    <a href="/2020/01/17/word-to-replace-do/" class="title has-link-black-ter is-size-6 has-text-weight-normal">Words to replace &#34;do&#34;</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/Study/">Study</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
     </div>
 </div>
     
@@ -836,12 +847,23 @@
         <ul class="menu-list">
         
         <li>
+            <a class="level is-marginless" href="/archives/2020/09/">
+                <span class="level-start">
+                    <span class="level-item">September 2020</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
             <a class="level is-marginless" href="/archives/2020/05/">
                 <span class="level-start">
                     <span class="level-item">May 2020</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">4</span>
+                    <span class="level-item tag">5</span>
                 </span>
             </a>
         </li>
@@ -915,7 +937,7 @@
                 <div class="control">
                     <a class="tags has-addons" href="/tags/deep-learning/">
                         <span class="tag">deep learning</span>
-                        <span class="tag is-grey">3</span>
+                        <span class="tag is-grey">4</span>
                     </a>
                 </div>
                 
