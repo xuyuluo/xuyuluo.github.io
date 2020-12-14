@@ -7,22 +7,20 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-<title>Notes for me, maybe for you - Know inside out, the essence</title>
+<title>Markov Chain Monte Carlo - Know inside out, the essence</title>
 
 
-    <meta name="description" content="How to ssh your lab server swiftly? Always feel annoyed with the input of IP and password, when you are about to login your lab server. Try these commands below. 123#first use ssh-keygen to generate y">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Notes for me, maybe for you">
-<meta property="og:url" content="https://github.com/xuyuluo/posts/47306/index.html">
+    <meta property="og:type" content="article">
+<meta property="og:title" content="Markov Chain Monte Carlo">
+<meta property="og:url" content="https://github.com/xuyuluo/posts/7600/index.html">
 <meta property="og:site_name" content="Know inside out, the essence">
-<meta property="og:description" content="How to ssh your lab server swiftly? Always feel annoyed with the input of IP and password, when you are about to login your lab server. Try these commands below. 123#first use ssh-keygen to generate y">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://github.com/images/og_image.png">
-<meta property="article:published_time" content="2020-01-14T18:22:26.000Z">
-<meta property="article:modified_time" content="2020-11-04T08:56:04.475Z">
+<meta property="article:published_time" content="2020-12-14T09:12:36.000Z">
+<meta property="article:modified_time" content="2020-12-14T09:13:41.081Z">
 <meta property="article:author" content="序瑜">
-<meta property="article:tag" content="ubuntu">
-<meta property="article:tag" content="useful commands">
+<meta property="article:tag" content="deep learning">
+<meta property="article:tag" content="statistics">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://github.com/images/og_image.png">
 
@@ -86,7 +84,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="/images/logo.svg" alt="Notes for me, maybe for you" height="28">
+                <img src="/images/logo.svg" alt="Markov Chain Monte Carlo" height="28">
             
             </a>
         </div>
@@ -128,17 +126,13 @@
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2020-01-14T18:22:26.000Z">2020-01-14</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/Work/">Work</a>
-                </div>
+                <time class="level-item has-text-grey" datetime="2020-12-14T09:12:36.000Z">2020-12-14</time>
                 
                 
                 <span class="level-item has-text-grey">
                     
                     
-                    2 minutes read (About 325 words)
+                    a few seconds read (About 1 words)
                 </span>
                 
                 
@@ -147,54 +141,18 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                Notes for me, maybe for you
+                Markov Chain Monte Carlo
             
         </h1>
         <div class="content">
-            <h2 id="How-to-ssh-your-lab-server-swiftly">How to ssh your lab server swiftly?</h2>
-<p>Always feel annoyed with the input of IP and password, when you are about to login your lab server. Try these commands below.</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">first use ssh-keygen to generate your public key</span></span><br><span class="line">xxx@xxx:~$ ssh-keygen</span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="keyword">then</span> ask your admin to authorize you public key</span></span><br></pre></td></tr></table></figure>
-<a id="more"></a>
-<h2 id="How-to-compress-your-images-with-nearly-invisible-loss">How to compress your images with nearly invisible loss?</h2>
-<p>Always pissed off by large photos from you cellphone, when you are preparing them for your blog post. Never mind, several simple ubuntu commands might help you.</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">first to resize images to certain size</span></span><br><span class="line">convert test.jpg -resize 2048x test-2048x.jpg</span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="keyword">then</span> compress it</span></span><br><span class="line">convert test-2048x.jpg -quality 50 test-2048x-50p.jpg</span><br></pre></td></tr></table></figure>
-<!-- -->
-<h2 id="How-to-keep-processes-running-after-ending-ssh-session">How to keep processes running after ending ssh session</h2>
-<p>The first thing you need to do is to install <strong>screen</strong></p>
-<p>Execute screen in terminal, then you get into a virtual terminal. You are supposed to run you program that you want it keep running in the virtual terminal.</p>
-<p>Then, 1: press<kbd>Ctrl+A</kbd>, 2: press<kbd>D</kbd>, to detach current virtual terminal and bring you back to the normal terminal. Use <strong>screen -r</strong> take you back to virtual terminal.</p>
-<p>More questions? Refer to this <a href="https://help.ubuntu.com/community/Screen">page</a></p>
-<!-- -->
-<h2 id="Create-link-to-open-pdf-in-latex">Create link to open pdf in latex</h2>
-<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\usepackage</span>&#123;hyperref&#125;</span><br><span class="line"><span class="keyword">\hypersetup</span>&#123;pdfnewwindow&#125;</span><br><span class="line"><span class="keyword">\href</span>&#123;<span class="link">run:main.pdf</span>&#125;&#123;This is my link&#125;</span><br></pre></td></tr></table></figure>
-<!-- -->
-<h2 id="How-to-create-snippets-in-vs-code">How to create snippets in vs code</h2>
-<p>Go to File-&gt;Preferences-&gt;User snippets-&gt;New snippets</p>
-<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">	<span class="attr">&quot;gray_background&quot;</span>:&#123;</span><br><span class="line">		<span class="attr">&quot;prefix&quot;</span>:[<span class="string">&quot;&lt;span&quot;</span>],</span><br><span class="line">		<span class="attr">&quot;body&quot;</span>: [<span class="string">&quot;&lt;span style=\&quot;background-color:#D3D3D3\&quot;&gt;$TM_SELECTED_TEXT$&#123;1:&#125;&lt;/span&gt;&quot;</span>],</span><br><span class="line">		<span class="attr">&quot;description&quot;</span>: <span class="string">&quot;autocomplete for gray background&quot;</span></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>Then, add shortcut. <kbd>Ctrl</kbd> + <kbd>k</kbd>, <kbd>Ctrl</kbd> + <kbd>s</kbd>, open keyboard shortcut json.</p>
-<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">&quot;key&quot;</span>: <span class="string">&quot;ctrl+alt+a&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;command&quot;</span>: <span class="string">&quot;editor.action.insertSnippet&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;args&quot;</span>: &#123;<span class="attr">&quot;name&quot;</span>: <span class="string">&quot;gray_background&quot;</span>&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<!-- -->
-<h2 id="Failed-to-import-the-numpy-c-extensions-under-conda-env">Failed to import the numpy c-extensions under conda env</h2>
-<p>Reinstall, numpy package</p>
-<ol>
-<li>activate conda env</li>
-<li>pip uninstall -y numpy</li>
-<li>pip uninstall -y setuptools</li>
-<li>pip install setuptools</li>
-<li>pip install numpy</li>
-</ol>
-<!-- -->
-<h2 id="How-to-crop-away-the-white-margin-of-your-pdf-figures">How to crop away the white margin of your pdf figures</h2>
-<!-- -->
-<h2 id="How-to-concatenate-burst-your-pdf-files-with-pdftk">How to concatenate/burst your pdf files with pdftk</h2>
-
+            <a id="more"></a>
         </div>
         
         <div class="level is-size-7 is-uppercase">
             <div class="level-start">
                 <div class="level-item">
                     <span class="is-size-6 has-text-grey has-mr-7">#</span>
-                    <a class="has-link-grey -link-link" href="/tags/ubuntu/" rel="tag">ubuntu</a>, <a class="has-link-grey -link-link" href="/tags/useful-commands/" rel="tag">useful commands</a>
+                    <a class="has-link-grey -link-link" href="/tags/deep-learning/" rel="tag">deep learning</a>, <a class="has-link-grey -link-link" href="/tags/statistics/" rel="tag">statistics</a>
                 </div>
             </div>
         </div>
@@ -230,17 +188,10 @@
 <div class="card card-transparent">
     <div class="level post-navigation is-flex-wrap is-mobile">
         
-        <div class="level-start">
-            <a class="level level-item has-link-grey  article-nav-prev" href="/posts/10609/">
-                <i class="level-item fas fa-chevron-left"></i>
-                <span class="level-item">Caffe源码阅读（一）</span>
-            </a>
-        </div>
-        
         
         <div class="level-end">
-            <a class="level level-item has-link-grey  article-nav-next" href="/posts/11272/">
-                <span class="level-item">我的研究</span>
+            <a class="level level-item has-link-grey  article-nav-next" href="/posts/58877/">
+                <span class="level-item">Energy based model</span>
                 <i class="level-item fas fa-chevron-right"></i>
             </a>
         </div>
@@ -1116,7 +1067,7 @@
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/">
                 
-                    <img src="/images/logo.svg" alt="Notes for me, maybe for you" height="28">
+                    <img src="/images/logo.svg" alt="Markov Chain Monte Carlo" height="28">
                 
                 </a>
                 <p class="is-size-7">
